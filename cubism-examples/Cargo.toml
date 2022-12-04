@@ -7,7 +7,7 @@ publish = false
 
 [[bin]]
 name = "display"
-path = "src/display.rs"
+path = "src/main.rs"
 
 [dependencies]
 cubism = { path = "..", version = "0.1.0" }
