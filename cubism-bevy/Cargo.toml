@@ -1,0 +1,15 @@
+[package]
+name = "cubism-bevy"
+version = "0.1.0"
+authors = ["BennyKok <itechbenny@gmail.com>"]
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "cubism-bevy"
+path = "src/main.rs"
+
+[dependencies]
+cubism = { path = "..", version = "0.1.0" }
+cubism-core-wgpu-renderer = { version = "0.1.0", path = "../cubism-core-wgpu-renderer"}
+bevy = "0.9.1"
