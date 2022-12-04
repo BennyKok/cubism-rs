@@ -62,7 +62,7 @@ fn main() {
     env_logger::from_env(env_logger::Env::default().default_filter_or("warn")).init();
     log::warn!("NOTE: The window may freeze for a few seconds due to image loading being very slow in debug");
     cubism::core::set_core_logger(|s| log::warn!("CUBISM: {}", s));
-    let res_path = PathBuf::from_iter(&[env!("CUBISM_CORE"), "Samples/Res/Haru"]);
+    let res_path = Path::new("../").join(PathBuf::from_iter(&[env!("CUBISM_CORE"), "Samples/Resources/Haru"]));
 
     // Create window
     let event_loop = EventLoop::new();
