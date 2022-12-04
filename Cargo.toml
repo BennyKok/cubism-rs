@@ -9,6 +9,7 @@ license = "MIT OR Apache-2.0"
 description = "A high level framework for the cubism sdk"
 keywords = ["live2d", "api-bindings", "cubism"]
 categories = ["api-bindings"]
+resolver = "2"
 
 [dependencies]
 cubism-core = { version = "0.1.0", path = "cubism-core", default-features = false }
